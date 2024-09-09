@@ -5,52 +5,68 @@ int main(int argc, char**argv)
 {
         float PI = 3.14159;
     
-        int x1 = scanf("What is your Point 1 x-value?");
-        int y1 = scanf("What is your Point 1 y-value?");
+        int x1 = printf("What is your Point 1 x-value?\n");
+            scanf("%d", &x1);
+        int y1 = printf("What is your Point 1 y-value?\n");
+            scanf("%d", &y1);
     
-        int x2 = scanf("What is your Point 2 x-value?");
-        int y2 = scanf("What is your Point 2 y-value?");
+        int x2 = printf("What is your Point 2 x-value?\n");
+            scanf("%d", &x2);
+        int y2 = printf("What is your Point 2 y-value?\n");
+            scanf("%d", &y2);
 
-    double calculateDistance();
-         
-        float d = (sqrt((y2-y1)^(2) + (x2-x1)^(2)));
-    
-        printf("The distance between two points is", d);
-
-        return d;
-
-    double calculatePerimeter();
+    double calculateDistance;
+         {
+            int d = (sqrt((y2-y1)^(2) + (x2-x1)^(2)));
         
+            printf("The distance between two points is %d\n", d);
+
+            return d;
+         };
+
+        double calculatePerimeter;
+        {
+            int d = (sqrt((y2-y1)^(2) + (x2-x1)^(2)));
+            
+            int p = (PI*d);
+
+                printf(" The perimeter of the city encompassed by your request is %d\n", p);
+
+            return 1.5;
+        };
         
-        float p = (PI*d);
+        double calculateArea;
+        {
+            int d = (sqrt((y2-y1)^(2) + (x2-x1)^(2)));
+        
+            int a = (float)PI*int(d^2/4);
 
-        printf("The perimeter of the city encompassed by your request is", p);
+                printf ("The area of the city encompassed by your request is %d\n", a);
 
-        return 1.5;
+            return 2;
+        };
+        
+        double calculateWidth;
+        {
+            int w = (sqrt((y2-y1)^(2) + (x2-x1)^(2)));
 
-    double calculateArea();
-
-        float a = (float)PI*(float)d^2/4;
-
-        printf("The area of the city encompassed by your request is", a);
+                printf("The width of the city encompassed by your request is %d\n", w);
 
         return 2;
-
-    double calculateWidth();
-        float w = (sqrt((y2-y1)^(2) + (x2-x1)^(2)));
-
-        printf("The width of the city encompassed by your request is", w);
-
-    return 2;
-
-    double calculateHeight();
+        };
         
-        int r = d/2;
-        float h = float(a)/(float)PI*r^2;
+        double calculateHeight;
+        {
+            int d = (sqrt((y2-y1)^(2) + (x2-x1)^(2)));
+            int a = (float)PI*int(d^2/4);
+            int r = d/2;
+            
+            int h = float(a)/(float)PI*int(r^2);
 
-        printf("The height of the city encompassed by your request is", h);
+                printf("The height of the city encompassed by your request is %d\n", h);
 
-    return 3.5;
-
+        return 3.5;
+        };
+        
 return 0;
 }

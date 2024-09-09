@@ -39,7 +39,7 @@ int main(int argc, char**argv)
         {
             int d = (sqrt((y2-y1)^(2) + (x2-x1)^(2)));
         
-            int a = (float)PI*int(d^2/4);
+            int a = (float)PI*(d^2/4);
 
                 printf ("The area of the city encompassed by your request is %d\n", a);
 
@@ -58,10 +58,10 @@ int main(int argc, char**argv)
         double calculateHeight;
         {
             int d = (sqrt((y2-y1)^(2) + (x2-x1)^(2)));
-            int a = (float)PI*int(d^2/4);
+            int a = (float)PI*(d^2/4);
             int r = d/2;
             
-            int h = float(a)/(float)PI*int(r^2);
+            int h = (a)/(float)PI*(r^2);
 
                 printf("The height of the city encompassed by your request is %d\n", h);
 
